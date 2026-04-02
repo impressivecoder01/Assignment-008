@@ -1,0 +1,362 @@
+[
+  {
+    "image": "app1.png",
+    "title": "Photo Editor Pro",
+    "companyName": "PixelSoft",
+    "id": 1,
+    "description": "Advanced photo editing tools with filters and effects.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 530 }
+    ]
+  },
+  {
+    "image": "app2.png",
+    "title": "Weather Now",
+    "companyName": "SkyTech",
+    "id": 2,
+    "description": "Real-time weather updates and forecasts.",
+    "size": 25,
+    "reviews": 800,
+    "ratingAvg": 4.2,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 330 }
+    ]
+  },
+  {
+    "image": "app3.png",
+    "title": "FitTrack",
+    "companyName": "Healthify",
+    "id": 3,
+    "description": "Track workouts and monitor health stats.",
+    "size": 60,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "app4.png",
+    "title": "Note Master",
+    "companyName": "WriteWell",
+    "id": 4,
+    "description": "Simple and efficient note-taking app.",
+    "size": 18,
+    "reviews": 600,
+    "ratingAvg": 4.1,
+    "downloads": 20000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "image": "app5.png",
+    "title": "Music Stream",
+    "companyName": "SoundWave",
+    "id": 5,
+    "description": "Stream millions of songs online.",
+    "size": 70,
+    "reviews": 2000,
+    "ratingAvg": 4.6,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "app6.png",
+    "title": "Budget Planner",
+    "companyName": "FinCorp",
+    "id": 6,
+    "description": "Manage your expenses and savings easily.",
+    "size": 30,
+    "reviews": 900,
+    "ratingAvg": 4.3,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 65 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 350 }
+    ]
+  },
+  {
+    "image": "app7.png",
+    "title": "Language Learner",
+    "companyName": "EduTech",
+    "id": 7,
+    "description": "Learn new languages with interactive lessons.",
+    "size": 55,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 470 }
+    ]
+  },
+  {
+    "image": "app8.png",
+    "title": "News Daily",
+    "companyName": "Global Media",
+    "id": 8,
+    "description": "Stay updated with the latest news.",
+    "size": 22,
+    "reviews": 700,
+    "ratingAvg": 4.0,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "image": "app9.png",
+    "title": "Gaming Hub",
+    "companyName": "PlayZone",
+    "id": 9,
+    "description": "Access a collection of fun mini games.",
+    "size": 80,
+    "reviews": 2500,
+    "ratingAvg": 4.8,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "app10.png",
+    "title": "Recipe Book",
+    "companyName": "CookMaster",
+    "id": 10,
+    "description": "Discover and save delicious recipes.",
+    "size": 35,
+    "reviews": 850,
+    "ratingAvg": 4.3,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 360 }
+    ]
+  },
+  {
+    "image": "app11.png",
+    "title": "Task Manager",
+    "companyName": "Productive Inc",
+    "id": 11,
+    "description": "Organize your daily tasks efficiently.",
+    "size": 20,
+    "reviews": 500,
+    "ratingAvg": 4.2,
+    "downloads": 18000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 190 }
+    ]
+  },
+  {
+    "image": "app12.png",
+    "title": "Map Navigator",
+    "companyName": "GeoTech",
+    "id": 12,
+    "description": "Navigate easily with GPS and maps.",
+    "size": 65,
+    "reviews": 1400,
+    "ratingAvg": 4.6,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 700 }
+    ]
+  },
+  {
+    "image": "app13.png",
+    "title": "Video Editor",
+    "companyName": "ClipWorks",
+    "id": 13,
+    "description": "Edit videos with powerful tools.",
+    "size": 90,
+    "reviews": 1700,
+    "ratingAvg": 4.5,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 860 }
+    ]
+  },
+  {
+    "image": "app14.png",
+    "title": "Chat Messenger",
+    "companyName": "Connectify",
+    "id": 14,
+    "description": "Instant messaging with friends and family.",
+    "size": 40,
+    "reviews": 3000,
+    "ratingAvg": 4.7,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1690 }
+    ]
+  },
+  {
+    "image": "app15.png",
+    "title": "Scanner Pro",
+    "companyName": "ScanTech",
+    "id": 15,
+    "description": "Scan documents and save as PDF.",
+    "size": 28,
+    "reviews": 750,
+    "ratingAvg": 4.4,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "app16.png",
+    "title": "Ebook Reader",
+    "companyName": "Readify",
+    "id": 16,
+    "description": "Read your favorite ebooks anytime.",
+    "size": 32,
+    "reviews": 650,
+    "ratingAvg": 4.3,
+    "downloads": 28000,
+    "ratings": [
+      { "name": "1 star", "count": 28 },
+      { "name": "2 star", "count": 48 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 244 }
+    ]
+  },
+  {
+    "image": "app17.png",
+    "title": "Calendar Plus",
+    "companyName": "TimeTech",
+    "id": 17,
+    "description": "Smart calendar with reminders.",
+    "size": 24,
+    "reviews": 580,
+    "ratingAvg": 4.1,
+    "downloads": 22000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "image": "app18.png",
+    "title": "QR Scanner",
+    "companyName": "QuickScan",
+    "id": 18,
+    "description": "Scan QR codes instantly.",
+    "size": 15,
+    "reviews": 400,
+    "ratingAvg": 4.0,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 110 }
+    ]
+  },
+  {
+    "image": "app19.png",
+    "title": "Flashlight",
+    "companyName": "BrightApps",
+    "id": 19,
+    "description": "Simple and powerful flashlight app.",
+    "size": 10,
+    "reviews": 300,
+    "ratingAvg": 3.9,
+    "downloads": 12000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 70 },
+      { "name": "5 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "app20.png",
+    "title": "Wallpaper HD",
+    "companyName": "DesignHub",
+    "id": 20,
+    "description": "Download high-quality wallpapers.",
+    "size": 50,
+    "reviews": 950,
+    "ratingAvg": 4.5,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 65 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 400 }
+    ]
+  }
+]
