@@ -1,5 +1,6 @@
 import React from 'react';
 import TCard from '../../Components/Cards/TCard';
+import { Link } from 'react-router';
 
 const TrendingApps = ({datas}) => {
     // console.log(datas)
@@ -13,7 +14,7 @@ const TrendingApps = ({datas}) => {
                 }
             </div>
             <div className='text-center'>
-            <button className='btn btn-primary '>Show All</button>
+            <Link to={`/applications`} className='btn btn-primary '>Show All</Link>
             </div>
         </div>
     );
