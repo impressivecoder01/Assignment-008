@@ -1,11 +1,11 @@
 import React from 'react';
 import Banner from '../../Components/Banner/Banner';
 import TrendingApps from '../TrendingApps/TrendingApps';
-import { useLoaderData } from 'react-router';
+// import { useLoaderData } from 'react-router';
 
 const Home = () => {
-    const datas = useLoaderData()
-    console.log(datas)
+    // const datas = useLoaderData()
+    // console.log(datas)
 
     return (
         <div>
@@ -13,7 +13,7 @@ const Home = () => {
             <Banner></Banner>
            
                  
-                <TrendingApps datas={datas}></TrendingApps>
+                <TrendingApps></TrendingApps>
                 
 
         </div>
