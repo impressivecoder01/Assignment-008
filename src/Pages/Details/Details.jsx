@@ -1,8 +1,13 @@
 import React from 'react';
+import useLoadData from '../../Components/Hooks/useLoadData';
+import { useParams } from 'react-router';
 
 const Details = () => {
+    const {id} = useParams()
+    const {appData} = useLoadData()
+    console.log(id, appData)
     return (
-        <div className='w-11/12 mx-auto '>
+        <div className='w-11/12 mx-auto py-5'>
             <div className="flex justify-between bg-base-100 shadow-sm">
   <figure>
     <img

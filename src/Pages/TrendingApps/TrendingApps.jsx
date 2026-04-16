@@ -5,7 +5,7 @@ import useLoadData from '../../Components/Hooks/useLoadData';
 
 const TrendingApps = () => {
     // console.log(datas)
-    const {appData, loading,error} = useLoadData()
+    const {appData} = useLoadData()
     const data = appData.slice(0,6)
     return (
         <div className='py-3'>
