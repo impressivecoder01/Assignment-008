@@ -20,7 +20,7 @@ const TCard = ({data}) => {
                 <div className="flex justify-around ">
                    <p className='text-blue-950'>{data.downloads}</p>
                    
-                   <p className='text-blue-950 flex border px-2 bg-gray-400 rounded-2xl font-black'>{data.ratings.map(a => <p> {a.count / 2}</p>)}</p>
+                   <p className='text-blue-950'>{data.ratingAvg}</p>
                 </div>
             </div>
         </div>

@@ -4,8 +4,11 @@ import { useParams } from 'react-router';
 
 const Details = () => {
     const {id} = useParams()
-    const {appData} = useLoadData()
-    console.log(id, appData)
+    const {appData,loading} = useLoadData()
+    const app = appData.find(p => p.id == id)
+    if (!app){
+        return <p>{loading}</p>
+    }
     return (
         <div className='w-11/12 mx-auto py-5'>
             <div className="flex justify-between bg-base-100 shadow-sm">
@@ -14,11 +17,13 @@ const Details = () => {
       src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
       alt="Movie" />
   </figure>
-  <div className="">
-    <h2 className="">New movie is released!</h2>
-    <p>Click the button to watch on Jetflix app.</p>
+  <div className="flex flex-col items-center gap-2">
+    <h2 className="text-2xl font-semibold">{app.title}</h2>
+    <h2 className="text-2xl font-semibold">{app.reviews}</h2>
+    <h2 className="text-2xl font-semibold">{app.downloads}</h2>
+    <p>{app.companyName}</p>
     <div className="">
-      <button className="btn btn-primary">Watch</button>
+      <button className="btn btn-primary">Install</button>
     </div>
   </div>
 </div>
