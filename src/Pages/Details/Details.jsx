@@ -24,6 +24,10 @@ const Details = () => {
       }
       localStorage.setItem('installed', JSON.stringify(updatedApp))
     }
+
+
+   
+
     return (
         <div className='w-11/12 mx-auto py-5'>
             <div className="flex justify-between bg-base-100 shadow-sm">

@@ -21,10 +21,20 @@ const InstalledApps = () => {
             return installedApp
         }
     }
+
+     const handleRemove = (id) =>{
+              const existingApp = JSON.parse(localStorage.getItem('installed'))
+              let updatedApp = existingApp.filter(p =>p.id != id)
+      console.log(updatedApp)
+      setInstalledApp(updatedApp)
+     
+      localStorage.setItem('installed', JSON.stringify(updatedApp))
+
+    }
     return (
         <div className='w-11/12 mx-auto my-5'>
             <div className='flex items-center justify-between mb-4'>
-                <h1 className='text-2xl font-semibold'>{installedApp.length} Apps Found</h1>
+                <h1 className='text-2xl font-semibold'>{sortedItem().length} Apps Found</h1>
                 {/* <button>Sort</button> */}
                 <label className='form-control max-w-xs'>
                     <select className='select select-bordered' value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}>
@@ -39,7 +49,7 @@ const InstalledApps = () => {
             </div>
             <div className='space-y-2'>
                 {
-                    sortedItem().map(app => (<div className='border p-4 rounded-2xl border-gray-400 bg-gray-200' key={app.id} app={app}>
+                    sortedItem().map(app => (<div className='border flex items-center justify-around p-4 rounded-2xl border-gray-400 bg-gray-200' key={app.id} app={app}>
                         <div>
                             <img src={app.image} alt="error" />
                         </div>
@@ -50,6 +60,9 @@ const InstalledApps = () => {
                                 <p>{app.size}MB</p>
                                 <p>{app.ratingAvg}</p>
                             </div>
+                        </div>
+                        <div>
+                            <button className='' onClick={()=> handleRemove(app.id)}>Uninstall</button>
                         </div>
                     </div>
                     ))
