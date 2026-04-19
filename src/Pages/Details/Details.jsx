@@ -9,6 +9,9 @@ const Details = () => {
     if (!app){
         return <p>{loading}</p>
     }
+    const handleAddToInstall = () => {
+      localStorage.setItem('installed', JSON.stringify(app))
+    }
     return (
         <div className='w-11/12 mx-auto py-5'>
             <div className="flex justify-between bg-base-100 shadow-sm">
@@ -19,11 +22,11 @@ const Details = () => {
   </figure>
   <div className="flex flex-col items-center gap-2">
     <h2 className="text-2xl font-semibold">{app.title}</h2>
-    <h2 className="text-2xl font-semibold">{app.reviews}</h2>
-    <h2 className="text-2xl font-semibold">{app.downloads}</h2>
+    <h2 className="text-2xl font-semibold">Reviews: {app.reviews}</h2>
+    <h2 className="text-2xl font-semibold">Downloads: {app.downloads}</h2>
     <p>{app.companyName}</p>
     <div className="">
-      <button className="btn btn-primary">Install</button>
+      <button onClick={()=> handleAddToInstall()} className="btn btn-primary">Install</button>
     </div>
   </div>
 </div>
