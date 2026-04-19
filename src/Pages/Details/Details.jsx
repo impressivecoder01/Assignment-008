@@ -1,6 +1,6 @@
 import React from 'react';
 import useLoadData from '../../Components/Hooks/useLoadData';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 
 const Details = () => {
     const {id} = useParams()
@@ -10,7 +10,19 @@ const Details = () => {
         return <p>{loading}</p>
     }
     const handleAddToInstall = () => {
-      localStorage.setItem('installed', JSON.stringify(app))
+      const existingApp = JSON.parse(localStorage.getItem('installed'))
+      let updatedApp = []
+      console.log(existingApp)
+      if(existingApp){
+        const isDuplicate = existingApp.some(p => p.id == app.id)
+        if(isDuplicate){
+          return alert('already added')
+        }
+        updatedApp = [...existingApp, app]
+      }else{
+        updatedApp.push(app)
+      }
+      localStorage.setItem('installed', JSON.stringify(updatedApp))
     }
     return (
         <div className='w-11/12 mx-auto py-5'>
@@ -26,7 +38,7 @@ const Details = () => {
     <h2 className="text-2xl font-semibold">Downloads: {app.downloads}</h2>
     <p>{app.companyName}</p>
     <div className="">
-      <button onClick={()=> handleAddToInstall()} className="btn btn-primary">Install</button>
+      <Link to={`/installedApp`} onClick={()=> handleAddToInstall()} className="btn btn-primary">Install</Link>
     </div>
   </div>
 </div>
