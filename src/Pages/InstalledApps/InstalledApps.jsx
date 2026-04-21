@@ -15,7 +15,7 @@ const InstalledApps = () => {
             return [...installedApp].sort((a, b)=> b.downloads - a.downloads)
         }
         else if(sortOrder === 'download-asc'){
-            return [...installedApp].sort((a,b)=> a.downloads - a.downloads)
+            return [...installedApp].sort((a, b)=> a.downloads - b.downloads)
         }
         else{
             return installedApp

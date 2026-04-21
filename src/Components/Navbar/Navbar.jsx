@@ -13,8 +13,8 @@ const Navbar = () => {
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <NavLink to={`/`}>Home</NavLink>
-        <NavLink >Apps</NavLink>
-        <NavLink >Install</NavLink>
+        <NavLink to={`/applications`} >Apps</NavLink>
+        <NavLink to={`/installedApp`} >Install</NavLink>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -22,8 +22,8 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal">
       <NavLink className={`px-2`} to={`/`}>Home</NavLink>
-        <NavLink to={`https://pixso.net/app/recent`} className={``}>Apps</NavLink>
-        <NavLink className={`px-2`}>Install</NavLink>
+        <NavLink to={`/applications`} className={``}>Apps</NavLink>
+        <NavLink to={`/installedApp`} className={`px-2`}>Install</NavLink>
     </ul>
   </div>
   <div className="navbar-end">
