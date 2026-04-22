@@ -1,6 +1,7 @@
 import React from 'react';
 import useLoadData from '../../Components/Hooks/useLoadData';
 import { Link, useParams } from 'react-router';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis,} from 'recharts';
 
 const Details = () => {
     const {id} = useParams()
@@ -46,8 +47,47 @@ const Details = () => {
     </div>
   </div>
 </div>
+<div className='space-y-3'>
+                {/* chart */}
+                <h1 className='font-bold text-2xl'>Ratings</h1>
+                <div className="bg-base-100 border rounded-xl p-4 h-80">
+  <ResponsiveContainer width="100%" height="100%">
+    <BarChart data={appData}>
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="title" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Bar dataKey="reviews" fill="#82ca9d" radius={[10, 10, 0, 0]} />
+    </BarChart>
+  </ResponsiveContainer>
+</div>
+            </div>
         </div>
     );
 };
 
 export default Details;
+
+// {/* <div className='bg-base-100 border rounded-xl p-4 h-80'>
+//                    <ResponsiveContainer width="100%" aspect={1.618} maxHeight={500}>
+
+//                 <BarChart
+//        style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 1.618 }}
+//       responsive
+//       data={appData}
+      
+//     >
+//       <CartesianGrid strokeDasharray="3 3" />
+//       <XAxis dataKey="title" />
+//       <YAxis width="" />
+//       <Tooltip />
+//       <Legend />
+      
+//       <Bar dataKey="reviews" fill="#82ca9d"  radius={[10, 10, 0, 0]} />
+//       {/* <RechartsDevtools /> */}
+//     </BarChart>
+                
+//                    </ResponsiveContainer>
+       
+//                 </div> */}
