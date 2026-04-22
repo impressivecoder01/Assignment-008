@@ -1,5 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import hero from '../../assets/hero.png';
+
 
 const Navbar = () => {
   return (
@@ -17,7 +19,11 @@ const Navbar = () => {
         <NavLink to={`/installedApp`} >Install</NavLink>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+    <div className='w-7'>
+
+    <Link to={'/'}><img src={hero} alt="" /></Link>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal">
@@ -27,7 +33,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to={`https://github.com/`} target='_blank' className='btn'>Contribute</Link>
   </div>
 </div>
   );
