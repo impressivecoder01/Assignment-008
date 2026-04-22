@@ -18,7 +18,7 @@ const Details = () => {
       if(existingApp){
         const isDuplicate = existingApp.some(p => p.id == app.id)
         if(isDuplicate){
-          return alert('already added')
+          return alert('Already added')
         }
         updatedApp = [...existingApp, app]
       }else{
