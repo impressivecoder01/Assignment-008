@@ -7,6 +7,7 @@ const Details = () => {
     const {id} = useParams()
     const {appData,loading} = useLoadData()
     const app = appData.find(p => p.id == id)
+    console.log(app)
     if (!app){
         return <p>{loading}</p>
     }
@@ -52,13 +53,13 @@ const Details = () => {
                 <h1 className='font-bold text-2xl'>Ratings</h1>
                 <div className="bg-base-100 border rounded-xl p-4 h-80">
   <ResponsiveContainer width="100%" height="100%">
-    <BarChart data={appData}>
+    <BarChart data={app.ratings}>
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="title" />
+      <XAxis dataKey={'name'} />
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="reviews" fill="#82ca9d" radius={[10, 10, 0, 0]} />
+      <Bar dataKey={"count"} fill="#82ca9d" radius={[10, 10, 0, 0]} />
     </BarChart>
   </ResponsiveContainer>
 </div>
